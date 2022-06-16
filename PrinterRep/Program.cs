@@ -22,5 +22,6 @@ namespace PrinterRep
                 {
                     webBuilder.UseStartup<Startup>();
                 });
+
     }
 }

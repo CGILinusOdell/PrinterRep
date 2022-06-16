@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29728.190
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32526.322
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrinterRep", "PrinterRep\PrinterRep.csproj", "{487CC850-CCF6-4B29-83D5-2061D17AD448}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrinterRep", "PrinterRep\PrinterRep.csproj", "{487CC850-CCF6-4B29-83D5-2061D17AD448}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

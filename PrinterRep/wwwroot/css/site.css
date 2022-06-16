@@ -1,71 +1,84 @@
-﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-for details on configuring this project to bundle and minify static web assets. */
-
-a.navbar-brand {
-  white-space: normal;
-  text-align: center;
-  word-break: break-all;
+﻿body {
+    background: var(--sdds-grey-50);
 }
 
-/* Provide sufficient contrast against white background */
-a {
-  color: #0366d6;
+.icon-wrapper i {
+    font-size: 20rem;
 }
 
-.btn-primary {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+.sdds-content {
+    background-color: var(--sdds-white);
 }
 
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+.sdds-header {
+    background-color: var(--sdds-blue-900);
+    height: 16rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 1px solid var(--sdds-blue-800);
+    color: var(--sdds-white);
+    box-sizing: content-box;
 }
 
-/* Sticky footer styles
--------------------------------------------------- */
-html {
-  font-size: 14px;
-}
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-.border-top {
-  border-top: 1px solid #e5e5e5;
-}
-.border-bottom {
-  border-bottom: 1px solid #e5e5e5;
+.scania-symbol {
+    padding: var(--sdds-spacing-element-16) var(--sdds-spacing-element-40);
+    display: block;
+    cursor: pointer;
+    background: var(--sdds-background-image-scania-symbol-svg);
+    background-size: 7.5rem auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-grow: 1;
 }
 
-.box-shadow {
-  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+@media (min-width: 1056px) {
+    .scania-symbol {
+        order: 2;
+        flex-grow: unset;
+        border-left: 1px solid var(--sdds-blue-800);
+    }
 }
 
-button.accept-policy {
-  font-size: 1rem;
-  line-height: inherit;
+.sdds-content-header {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+    background-color: var(--sdds-blue-900);
+    padding-bottom: var(--sdds-spacing-element-40);
+    height: 48rem;
+    margin-top: 0;
 }
 
-/* Sticky footer styles
--------------------------------------------------- */
-html {
-  position: relative;
-  min-height: 100%;
+.header-greeting {
+    color: var(--sdds-blue-300);
 }
 
-body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
+.page-title {
+    display: flex;
+    color: var(--sdds-white);
+    margin-top: var(--sdds-spacing-element-8);
 }
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  white-space: nowrap;
-  line-height: 60px; /* Vertically center the text there */
+
+.content-wrapper {
+    padding-top: var(--sdds-spacing-element-24);
+    padding-bottom: var(--sdds-spacing-element-24);
 }
+
+.lead-text {
+    margin-bottom: var(--sdds-spacing-element-16);
+}
+
+.section-wrapper {
+    margin-top: var(--sdds-spacing-element-32);
+}
+
+.component-wrapper {
+    padding-bottom: var(--sdds-spacing-element-24);
+}
+
+.sdds-btn-group .sdds-btn,
+.sdds-btn-group sdds-button {
+    margin: 10px;
+}
+
