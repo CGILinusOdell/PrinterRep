@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\malin.widen\\source\\repos\\PrinterRep\\PrinterRep\\PrinterRep.csproj": {}
+    "C:\\Users\\linus.odell\\Source\\Repos\\PrinterRep\\PrinterRep\\PrinterRep.csproj": {}
   },
   "projects": {
-    "C:\\Users\\malin.widen\\source\\repos\\PrinterRep\\PrinterRep\\PrinterRep.csproj": {
+    "C:\\Users\\linus.odell\\Source\\Repos\\PrinterRep\\PrinterRep\\PrinterRep.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\malin.widen\\source\\repos\\PrinterRep\\PrinterRep\\PrinterRep.csproj",
+        "projectUniqueName": "C:\\Users\\linus.odell\\Source\\Repos\\PrinterRep\\PrinterRep\\PrinterRep.csproj",
         "projectName": "PrinterRep",
-        "projectPath": "C:\\Users\\malin.widen\\source\\repos\\PrinterRep\\PrinterRep\\PrinterRep.csproj",
-        "packagesPath": "C:\\Users\\malin.widen\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\malin.widen\\source\\repos\\PrinterRep\\PrinterRep\\obj\\",
+        "projectPath": "C:\\Users\\linus.odell\\Source\\Repos\\PrinterRep\\PrinterRep\\PrinterRep.csproj",
+        "packagesPath": "C:\\Users\\linus.odell\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\linus.odell\\Source\\Repos\\PrinterRep\\PrinterRep\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\malin.widen\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\linus.odell\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -43,6 +39,16 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "System.DirectoryServices": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "System.DirectoryServices.AccountManagement": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -53,6 +59,16 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.10, 3.1.10]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[3.1.26, 3.1.26]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -61,7 +77,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }
