@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@using System.DirectoryServices.AccountManagement
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -63,6 +64,7 @@
       </div>
       
       <div class='sdds-nav__right'>       
+        <p class='sdds-nav__item'>@UserPrincipal.Current.SamAccountName</p>
         <a class='sdds-nav__item sdds-nav__app-logo' href='#'></a>
       </div> 
   </nav>
