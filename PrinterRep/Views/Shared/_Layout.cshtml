@@ -36,12 +36,13 @@
                     <p class='sdds-nav__item-core-text'>Scanna skrivare</p>
                 </a>
             </li>
-      
-            <li class='sdds-nav__item sdds-nav__item--active'>
-                <a class='sdds-nav__item-core ' href='#'>
+
+            <li class='sdds-nav__item'>
+                <a class='sdds-nav__item-core' href='#'>
                     <p class='sdds-nav__item-core-text'>Lägg till skrivare</p>
                 </a>
             </li>
+ 
       
             <li class='sdds-nav__item sdds-nav__dropdown ${
               openInlineDropdown && 'sdds-nav__dropdown--opened'
@@ -68,26 +69,8 @@
         <a class='sdds-nav__item sdds-nav__app-logo' href='#'></a>
       </div> 
   </nav>
-        @*<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">PrinterRep</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>*@
-    </header>
+       
+
     <div class="container">
         <main role="main" class="pb-3">
          <sdds-theme></sdds-theme>
@@ -106,6 +89,6 @@
     @RenderSection("Scripts", required: false)
 
 
-
+        </header>
 </body>
 </html>
