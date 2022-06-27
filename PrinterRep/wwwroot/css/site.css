@@ -81,19 +81,20 @@
     padding-bottom: var(--sdds-spacing-element-24);
 }
 
+#Username {
+    color: var(--sdds-white);
+    margin: var(--sdds-spacing-element-24);
+}
 .sdds-btn-group .sdds-btn,
 .sdds-btn-group sdds-button {
-    /*  margin: 10px;
-    height: 150px;*/
     margin: var(--sdds-spacing-element-24);
-  
 }
 
-/*.sdds-footer {
-    padding-bottom: 24px;
-    display: flex;
-    width: 100%;
-    align-items: stretch;
-    flex-direction: column;
-}*/
+#index-buttons-big-size {
+    height: 96px;
+}
+
+
+
+
 
