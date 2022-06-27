@@ -48,14 +48,14 @@ namespace PrinterRep
             //app.UseStaticFiles();
             //if (env.IsDevelopment)
             //{
-                app.UseStaticFiles(new StaticFileOptions()
-                {
-                    RequestPath = PathString.FromUriComponent("/node_modules"),
-                    FileProvider = new PhysicalFileProvider(
-                      Path.Combine(Directory.GetCurrentDirectory(), "node_modules")),
-                });
+            app.UseStaticFiles(new StaticFileOptions()
+            {
+                RequestPath = PathString.FromUriComponent("/node_modules"),
+                FileProvider = new PhysicalFileProvider(
+                  Path.Combine(Directory.GetCurrentDirectory(), "node_modules")),
+            });
             //}
-           
+
 
             app.UseRouting();
 
@@ -66,7 +66,8 @@ namespace PrinterRep
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
-                
+
+
             });
         }
     }
