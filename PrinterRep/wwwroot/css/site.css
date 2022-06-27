@@ -2,6 +2,9 @@
     background: var(--sdds-grey-50);
 }
 
+
+
+
 .icon-wrapper i {
     font-size: 20rem;
 }
@@ -71,6 +74,7 @@
 
 .section-wrapper {
     margin-top: var(--sdds-spacing-element-32);
+   
 }
 
 .component-wrapper {
@@ -79,7 +83,17 @@
 
 .sdds-btn-group .sdds-btn,
 .sdds-btn-group sdds-button {
-    margin: 10px;
-    height: 150px;
+    /*  margin: 10px;
+    height: 150px;*/
+    margin: var(--sdds-spacing-element-24);
+  
 }
+
+/*.sdds-footer {
+    padding-bottom: 24px;
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+    flex-direction: column;
+}*/
 
