@@ -64,8 +64,8 @@
 }
 
 .content-wrapper {
-    padding-top: var(--sdds-spacing-element-24);
-    padding-bottom: var(--sdds-spacing-element-24);
+    padding-top: var(--sdds-spacing-element-48);
+    padding-bottom: var(--sdds-spacing-element-48);
 }
 
 .lead-text {
@@ -92,8 +92,13 @@
 
 #index-buttons-big-size {
     height: 96px;
-    padding:64px;
+    padding:24px;
 }
+
+/*.sdds-footer {
+    position: static !important;
+}*/
+
 
 
 

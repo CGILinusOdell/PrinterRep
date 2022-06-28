@@ -4,14 +4,42 @@
 
 <p>This is search-page</p>
 
-<div class="component-wrapper">
-    <sdds-table table-title='Truck & drivers data'
-                body-data='[{"truck":"L-series","driver":"Miki","country":"USA","mileage":123987},{"truck":"P-series","driver":"Guerra","country":"Sweden","mileage":2000852},{"truck":"G-series","driver":"Ferrell","country":"Germany","mileage":564},{"truck":"R-series","driver":"Cox","country":"Spain","mileage":1789357},{"truck":"S-series","driver":"Montgomery","country":"Croatia","mileage":65},{"truck":"L-series","driver":"Sheryl","country":"Greece","mileage":365784},{"truck":"G-series","driver":"Bojan","country":"Norway","mileage":80957}]'
-                filtering>
-        <sdds-header-cell column-key='truck' column-title='Truck type' custom-width="120px"></sdds-header-cell>
-        <sdds-header-cell column-key='driver' column-title='Driver name' custom-width="120px" sortable></sdds-header-cell>
-        <sdds-header-cell column-key='country' column-title='Country' custom-width="90px"></sdds-header-cell>
-        <sdds-header-cell column-key='mileage' column-title='Mileage' custom-width="100px" text-align='right'></sdds-header-cell>
-    </sdds-table>
-</div>
 
+@*Search alternativ
+    ...........................................................................*@
+
+<div class="sdds-container">
+    <div class="sdds-row">
+        <sdds-dropdown-filter placeholder="Skrivar-ID"
+                              data='[{"value":"opt-1","label":"hp deskjet1"},{"value":"opt-2","label":"hp deskjet2"},{"value":"opt-3","label":"hp deskjet3"}]'>
+        </sdds-dropdown-filter>
+        <button class="sdds-btn sdds-btn-primary sdds-btn-sm">SÖK</button>
+    </div>
+  
+    @*<sdds-dropdown-filter
+    id="myFilter"
+    placeholder="Select option">
+    </sdds-dropdown-filter>
+
+    <script>
+    var data= [
+    {"value":"opt-1","label":"Jakarta"},
+    {"value":"opt-2","label":"Stockholm"},
+    {"value":"opt-3","label":"Barcelona"}
+    ];
+    var dropdown = document.querySelector('#myFilter');
+    dropdown.data = data;
+    </script>*@
+    @*........................................................................*@
+    <div class="sdds-row">
+              <div class="sdds-col-sm-6">
+            <sdds-textfield type="text" @*placeholder="Placeholder"*@>
+                <span slot="sdds-label">Namn</span>
+            </sdds-textfield>
+           
+            <sdds-textfield type="text">
+                <span slot="sdds-label">Typ</span>
+            </sdds-textfield>
+         <button class="sdds-btn sdds-btn-primary sdds-btn-sm">QR-Print</button>
+    </div>
+</div>
