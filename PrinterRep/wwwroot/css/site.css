@@ -1,14 +1,27 @@
-﻿body {
+﻿/*Test Footer*/
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
     background: var(--sdds-grey-50);
 }
 
+.content {
+    flex: 1 0 auto;
+}
 
-
+.footer sdds-footer {
+    flex-shrink: 0;
+}
 
 .icon-wrapper i {
     font-size: 20rem;
    
 }
+/*Test-footer*/
 
 .sdds-content {
     background-color: var(--sdds-white);
@@ -77,7 +90,7 @@
 
 .section-wrapper {
     margin-top: var(--sdds-spacing-element-32);
-    
+ 
 }
 
 .component-wrapper {
@@ -94,10 +107,6 @@
     margin: var(--sdds-spacing-element-24);
 }
 
-
-/*.sdds-footer {
-    position: static !important;
-}*/
 
 
 

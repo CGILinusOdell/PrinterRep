@@ -14,86 +14,91 @@
 
 </head>
 <body>
-    <header>
-        <nav class='sdds-nav ${openMobileMenu && ' sdds-nav__mob-menu--opened'}'>
-            <div class='sdds-nav__left'>
-                <div class="sdds-nav__overlay" onclick="closeDropdownsFromOverlay()"></div>
-                <button class='sdds-nav__mob-menu-btn' onclick='toggleMobileMenu()'>
-                    <div id='sdds-nav__mob-menu-icon'>
-                        <span class='sdds-nav__mob-menu-icon-line' id='sdds-nav__mob-menu-icon-line-1'></span>
-                        <span class='sdds-nav__mob-menu-icon-line' id='sdds-nav__mob-menu-icon-line-2'></span>
-                        <span class='sdds-nav__mob-menu-icon-line' id='sdds-nav__mob-menu-icon-line-3'></span>
-                    </div>
-                </button>
-                <div class='sdds-nav__app-name'>SCANIA</div>
-            </div>
+    <div class="content">
+        <header>
+            <nav class='sdds-nav ${openMobileMenu && ' sdds-nav__mob-menu--opened'}'>
+                <div class='sdds-nav__left'>
+                    <div class="sdds-nav__overlay" onclick="closeDropdownsFromOverlay()"></div>
+                    <button class='sdds-nav__mob-menu-btn' onclick='toggleMobileMenu()'>
+                        <div id='sdds-nav__mob-menu-icon'>
+                            <span class='sdds-nav__mob-menu-icon-line' id='sdds-nav__mob-menu-icon-line-1'></span>
+                            <span class='sdds-nav__mob-menu-icon-line' id='sdds-nav__mob-menu-icon-line-2'></span>
+                            <span class='sdds-nav__mob-menu-icon-line' id='sdds-nav__mob-menu-icon-line-3'></span>
+                        </div>
+                    </button>
+                    <div class='sdds-nav__app-name'>SCANIA</div>
+                </div>
 
-            <div class='sdds-nav__center'>
-                <ul class='sdds-nav__inline-menu'>
+                <div class='sdds-nav__center'>
+                    <ul class='sdds-nav__inline-menu'>
 
-                    <li class='sdds-nav__item'>
-                        <a class='sdds-nav__item-core' href='#'>
-                            <p class='sdds-nav__item-core-text'>Scanna skrivare</p>
-                        </a>
-                    </li>
+                        <li class='sdds-nav__item'>
+                            <a class='sdds-nav__item-core' href='#'>
+                                <p class='sdds-nav__item-core-text'>Scanna skrivare</p>
+                            </a>
+                        </li>
 
-                    <li class='sdds-nav__item'>
-                        <a class='sdds-nav__item-core' href='#'>
-                            <p class='sdds-nav__item-core-text'>Lägg till skrivare</p>
-                        </a>
-                    </li>
+                        <li class='sdds-nav__item'>
+                            <a class='sdds-nav__item-core' href='#'>
+                                <p class='sdds-nav__item-core-text'>Lägg till skrivare</p>
+                            </a>
+                        </li>
 
 
-                    <li class='sdds-nav__item sdds-nav__dropdown ${
+                        <li class='sdds-nav__item sdds-nav__dropdown ${
               openInlineDropdown && ' sdds-nav__dropdown--opened'}'>
-                        <button class='sdds-nav__item-core' onclick='toggleInlineDropdown()'>
-                            <p class='sdds-nav__item-core-text'>Administation</p>
-                            <span class='sdds-nav__dropdown-icon'>
-                                <svg class="sdds-nav__dropdown-icon-svg" viewBox='0 0 14 7' fill='none' xmlns='http://www.w3.org/2000/svg'>
-                                    <path fill-rule='evenodd' clip-rule='evenodd' fill='currentColor' d='M1.13668 0.891564C1.33194 0.696302 1.64853 0.696302 1.84379 0.891564L6.78786 5.83563C6.90501 5.95278 7.09496 5.95278 7.21212 5.83563L12.1562 0.891564C12.3515 0.696302 12.668 0.696303 12.8633 0.891565C13.0586 1.08683 13.0586 1.40341 12.8633 1.59867L7.91923 6.54273C7.41155 7.05041 6.58843 7.05041 6.08075 6.54273L1.13668 1.59867C0.941419 1.40341 0.941419 1.08683 1.13668 0.891564Z' />
-                                </svg>
-                            </span>
-                        </button>
-                        <ul class='sdds-nav__dropdown-menu'>
-                            <li class='sdds-nav__dropdown-item'><a class='sdds-nav__dropdown-item-core' href='#'>Sub item 3 long label...</a></li>
-                            <li class='sdds-nav__dropdown-item'><a class='sdds-nav__dropdown-item-core' href='#'>Sub item 3</a></li>
-                            <li class='sdds-nav__dropdown-item sdds-nav__dropdown-item--active'><a class='sdds-nav__dropdown-item-core' href='#'>Sub item 3 long label...</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
+                            <button class='sdds-nav__item-core' onclick='toggleInlineDropdown()'>
+                                <p class='sdds-nav__item-core-text'>Administation</p>
+                                <span class='sdds-nav__dropdown-icon'>
+                                    <svg class="sdds-nav__dropdown-icon-svg" viewBox='0 0 14 7' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                                        <path fill-rule='evenodd' clip-rule='evenodd' fill='currentColor' d='M1.13668 0.891564C1.33194 0.696302 1.64853 0.696302 1.84379 0.891564L6.78786 5.83563C6.90501 5.95278 7.09496 5.95278 7.21212 5.83563L12.1562 0.891564C12.3515 0.696302 12.668 0.696303 12.8633 0.891565C13.0586 1.08683 13.0586 1.40341 12.8633 1.59867L7.91923 6.54273C7.41155 7.05041 6.58843 7.05041 6.08075 6.54273L1.13668 1.59867C0.941419 1.40341 0.941419 1.08683 1.13668 0.891564Z' />
+                                    </svg>
+                                </span>
+                            </button>
+                            <ul class='sdds-nav__dropdown-menu'>
+                                <li class='sdds-nav__dropdown-item'><a class='sdds-nav__dropdown-item-core' href='#'>Sub item 3 long label...</a></li>
+                                <li class='sdds-nav__dropdown-item'><a class='sdds-nav__dropdown-item-core' href='#'>Sub item 3</a></li>
+                                <li class='sdds-nav__dropdown-item sdds-nav__dropdown-item--active'><a class='sdds-nav__dropdown-item-core' href='#'>Sub item 3 long label...</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
 
-            <div class='sdds-nav__right'>
-                <p id="Username" class='sdds-headline-07' ;>@UserPrincipal.Current.SamAccountName</p>
-                <a class='sdds-nav__item sdds-nav__app-logo' href='#'></a>
-            </div>
-        </nav>
-    </header>
-  
+                <div class='sdds-nav__right'>
+                    <p id="Username" class='sdds-headline-07' ;>@UserPrincipal.Current.SamAccountName</p>
+                    <a class='sdds-nav__item sdds-nav__app-logo' href='#'></a>
+                </div>
+            </nav>
+        </header>
+
         <div class="container">
             <main role="main" class="pb-3">
                 <sdds-theme></sdds-theme>
                 @RenderBody()
             </main>
         </div>
-  
-    <div class="sdds-footer">
-        <div class="sdds-footer-main">
-            <ul class="sdds-footer-main-links">
-                <li><a href="#">Legal link</a></li>
-                <li><a href="#">Legal link</a></li>
-                <li><a href="#">Legal link</a></li>
-            </ul>
-            <ul class="sdds-footer-social-links">
-                <li><a href="#">Social 1</a></li>
-                <li><a href="#">Social 1</a></li>
-                <li><a href="#">Social 1</a></li>
-            </ul>
-            <div class="sdds-footer-main-brand">
-                <p>Copyright &copy; 2021 Scania</p>
+    </div>
+    <div class="push">
+        <div class="footer sdds-footer">
+            <div class="sdds-footer-main">
+                <ul class="sdds-footer-main-links">
+                    <li><a href="#">Legal link</a></li>
+                    <li><a href="#">Legal link</a></li>
+                    <li><a href="#">Legal link</a></li>
+                </ul>
+                <ul class="sdds-footer-social-links">
+                    <li><a href="#">Social 1</a></li>
+                    <li><a href="#">Social 1</a></li>
+                    <li><a href="#">Social 1</a></li>
+                </ul>
+                <div class="sdds-footer-main-brand">
+                    <p>Copyright &copy; 2021 Scania</p>
+                </div>
             </div>
         </div>
     </div>
+
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
