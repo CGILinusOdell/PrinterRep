@@ -1,45 +1,81 @@
 ﻿@{
-    ViewData["Title"] = "Hej hopp";
+    ViewData["Title"] = "PrinterRep";
 }
 
-<p>This is search-page</p>
+<div class="component-wrapper">
 
-
-@*Search alternativ
-    ...........................................................................*@
-
-<div class="sdds-container">
+    @*Skrivar-ID sektion*@
     <div class="sdds-row">
-        <sdds-dropdown-filter placeholder="Skrivar-ID"
-                              data='[{"value":"opt-1","label":"hp deskjet1"},{"value":"opt-2","label":"hp deskjet2"},{"value":"opt-3","label":"hp deskjet3"}]'>
-        </sdds-dropdown-filter>
-        <button class="sdds-btn sdds-btn-primary sdds-btn-sm">SÖK</button>
+        <div class="sdds-col-sm-10">
+            <span slot="sdds-label">Skrivar-ID</span>
+            <sdds-dropdown-filter>
+                data='[{"value":"opt-1","label":"hp deskjet1"},{"value":"opt-2","label":"hp deskjet2"},{"value":"opt-3","label":"hp deskjet3"}]'>
+            </sdds-dropdown-filter>
+        </div>
+        <div class="sdds-col-sm-2">
+            <button onclick="myShowDiv()" class="sdds-btn sdds-btn-primary sdds-btn-fullbleed>" style="margin: var(--sdds-spacing-element-24);" ;">SÖK</button>
+        </div>
     </div>
-  
-    @*<sdds-dropdown-filter
-    id="myFilter"
-    placeholder="Select option">
-    </sdds-dropdown-filter>
 
+
+    @*Sektion som visas efter "SÖK" OnClick*@
+    <div class="hidesection" style="display:none;">
+        <div class="sdds-row">
+            <div class="sdds-col-sm-4">
+                <sdds-textfield type="text">
+                    <span slot="sdds-label">Namn</span>
+                </sdds-textfield>
+            </div>
+            <div class="sdds-col-sm-4">
+                <sdds-textfield type="text">
+                    <span slot="sdds-label">Typ</span>
+                </sdds-textfield>
+            </div>
+            <div class="sdds-col-sm-4">
+                <button class="sdds-btn sdds-btn-primary sdds-btn-fullbleed" style="margin: var(--sdds-spacing-element-24);">QR-Print</button>
+            </div>
+        </div>
+
+        <div class="sdds-row">
+            <table class="sdds-table">
+                <thead class="sdds-table__header">
+                    <tr class="sdds-table__row">
+                        <th class="sdds-table__header-cell sdds-u-pl2 sdds-u-pr2">Datum</th>
+                        <th class="sdds-table__header-cell sdds-u-pl2 sdds-u-pr2"> Beskrivning</th>
+                    </tr>
+                </thead>
+                <tbody class="sdds-table__body">
+                    <tr class="sdds-table__row">
+                        <td class="sdds-table__body-cell sdds-u-pl2 sdds-u-pr2">2022-06-01</td>
+                        <td class="sdds-table__body-cell sdds-u-pl2 sdds-u-pr2">Skrivaren sprängdes...</td>
+                    </tr>
+                    <tr class="sdds-table__row">
+                        <td class="sdds-table__body-cell sdds-u-pl2 sdds-u-pr2">...</td>
+                        <td class="sdds-table__body-cell sdds-u-pl2 sdds-u-pr2">...</td>
+                    </tr>
+                    <tr class="sdds-table__row">
+                        <td class="sdds-table__body-cell sdds-u-pl2 sdds-u-pr2">...</td>
+                        <td class="sdds-table__body-cell sdds-u-pl2 sdds-u-pr2">...</td>
+                    </tr>
+                    <tr class="sdds-table__row">
+                        <td class="sdds-table__body-cell sdds-u-pl2 sdds-u-pr2">...</td>
+                        <td class="sdds-table__body-cell sdds-u-pl2 sdds-u-pr2">...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    @*Script för att show div*@
     <script>
-    var data= [
-    {"value":"opt-1","label":"Jakarta"},
-    {"value":"opt-2","label":"Stockholm"},
-    {"value":"opt-3","label":"Barcelona"}
-    ];
-    var dropdown = document.querySelector('#myFilter');
-    dropdown.data = data;
-    </script>*@
-    @*........................................................................*@
-    <div class="sdds-row">
-              <div class="sdds-col-sm-6">
-            <sdds-textfield type="text" @*placeholder="Placeholder"*@>
-                <span slot="sdds-label">Namn</span>
-            </sdds-textfield>
-           
-            <sdds-textfield type="text">
-                <span slot="sdds-label">Typ</span>
-            </sdds-textfield>
-         <button class="sdds-btn sdds-btn-primary sdds-btn-sm">QR-Print</button>
-    </div>
+        function myShowDiv() {
+            const hidesection = document.querySelector('.hidesection');
+            hidesection.style.display = "block";
+        }
+    </script>
+
 </div>
+
+
+

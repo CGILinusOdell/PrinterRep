@@ -11,7 +11,7 @@
     <link rel="SASSstylesheet" href="~/SASS/StyleSheet.scss" />
     <script src="/node_modules/@@scania/theme-light/dist/light-theme.js"></script>
     <script src="/node_modules/@@scania/components/dist/core.js"></script>
- 
+
 </head>
 <body>
     <header>
@@ -64,36 +64,36 @@
             </div>
 
             <div class='sdds-nav__right'>
-                <p id="Username"class='sdds-headline-07';>@UserPrincipal.Current.SamAccountName</p>
+                <p id="Username" class='sdds-headline-07' ;>@UserPrincipal.Current.SamAccountName</p>
                 <a class='sdds-nav__item sdds-nav__app-logo' href='#'></a>
             </div>
         </nav>
-         </header>
-
+    </header>
+  
         <div class="container">
             <main role="main" class="pb-3">
                 <sdds-theme></sdds-theme>
                 @RenderBody()
             </main>
         </div>
-
-        <div class="sdds-footer">
-            <div class="sdds-footer-main">
-                <ul class="sdds-footer-main-links">
-                    <li><a href="#">Legal link</a></li>
-                    <li><a href="#">Legal link</a></li>
-                    <li><a href="#">Legal link</a></li>
-                </ul>
-                <ul class="sdds-footer-social-links">
-                    <li><a href="#">Social 1</a></li>
-                    <li><a href="#">Social 1</a></li>
-                    <li><a href="#">Social 1</a></li>
-                </ul>
-                <div class="sdds-footer-main-brand">
-                    <p>Copyright &copy; 2021 Scania</p>
-                </div>
+  
+    <div class="sdds-footer">
+        <div class="sdds-footer-main">
+            <ul class="sdds-footer-main-links">
+                <li><a href="#">Legal link</a></li>
+                <li><a href="#">Legal link</a></li>
+                <li><a href="#">Legal link</a></li>
+            </ul>
+            <ul class="sdds-footer-social-links">
+                <li><a href="#">Social 1</a></li>
+                <li><a href="#">Social 1</a></li>
+                <li><a href="#">Social 1</a></li>
+            </ul>
+            <div class="sdds-footer-main-brand">
+                <p>Copyright &copy; 2021 Scania</p>
             </div>
         </div>
+    </div>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
@@ -101,4 +101,3 @@
 </body>
 </html>
 
-           
