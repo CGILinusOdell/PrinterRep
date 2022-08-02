@@ -2,7 +2,7 @@
     ViewData["Title"] = "PrinterRep";
 }
 
-<div class="component-wrapper">
+<div class="component-wrapper" style=margin: var(--sdds-spacing-layout-160); text-align: center; margin-top: var(--sdds-spacing-layout-160);">
 
     @*Skrivar-ID sektion*@
     <div class="sdds-row">
@@ -13,68 +13,78 @@
             </sdds-dropdown-filter>
         </div>
         <div class="sdds-col-sm-2">
-            <button onclick="myShowDiv()" class="sdds-btn sdds-btn-primary sdds-btn-fullbleed>" style="margin: var(--sdds-spacing-element-24);" ;">SÖK</button>
+            @*     <button onclick="myShowDiv()" class="sdds-btn sdds-btn-primary sdds-btn-fullbleed" style="margin: var(--sdds-spacing-element-24);">SÖK</button>*@
+            <sdds-button onclick="myShowDiv()" type="primary" fullbleed text="Sök"></sdds-button>
         </div>
     </div>
 
 
     @*Sektion som visas efter "SÖK" OnClick*@
     <div class="hidesection" style="display:none;">
-        <div class="sdds-row">
-            <div class="sdds-col-sm-4">
+        <div class="sdds-col-sm-12">
+            <div class="sdds-col-sm-6" style="margin-top: var(--sdds-spacing-element-20); text-align:left">
+
                 <sdds-textfield type="text">
                     <span slot="sdds-label">Namn</span>
                 </sdds-textfield>
             </div>
-            <div class="sdds-col-sm-4">
-                <sdds-textfield type="text">
-                    <span slot="sdds-label">Typ</span>
-                </sdds-textfield>
-            </div>
-            <div class="sdds-col-sm-4">
-                <button class="sdds-btn sdds-btn-primary sdds-btn-fullbleed" style="margin: var(--sdds-spacing-element-24);">QR-Print</button>
+
+
+            <div class="sdds-row">
+                <div class="sdds-col-sm-10" style="margin-top: var(--sdds-spacing-element-20); text-align:left">
+                    <sdds-textfield type="text">
+                        <span slot="sdds-label">Typ</span>
+                    </sdds-textfield>
+                </div>
+                <div class="sdds-col-sm-2" style="text-align:right; margin-top: var(--sdds-spacing-element-20)">
+                    <sdds-button type="primary" fullbleed text="QR-Print"></sdds-button>
+                </div>
             </div>
         </div>
 
-        <div class="sdds-row">
-            <table class="sdds-table">
-                <thead class="sdds-table__header">
-                    <tr class="sdds-table__row">
-                        <th class="sdds-table__header-cell sdds-u-pl2 sdds-u-pr2">Datum</th>
-                        <th class="sdds-table__header-cell sdds-u-pl2 sdds-u-pr2"> Beskrivning</th>
-                    </tr>
-                </thead>
-                <tbody class="sdds-table__body">
-                    <tr class="sdds-table__row">
-                        <td class="sdds-table__body-cell sdds-u-pl2 sdds-u-pr2">2022-06-01</td>
-                        <td class="sdds-table__body-cell sdds-u-pl2 sdds-u-pr2">Skrivaren sprängdes...</td>
-                    </tr>
-                    <tr class="sdds-table__row">
-                        <td class="sdds-table__body-cell sdds-u-pl2 sdds-u-pr2">...</td>
-                        <td class="sdds-table__body-cell sdds-u-pl2 sdds-u-pr2">...</td>
-                    </tr>
-                    <tr class="sdds-table__row">
-                        <td class="sdds-table__body-cell sdds-u-pl2 sdds-u-pr2">...</td>
-                        <td class="sdds-table__body-cell sdds-u-pl2 sdds-u-pr2">...</td>
-                    </tr>
-                    <tr class="sdds-table__row">
-                        <td class="sdds-table__body-cell sdds-u-pl2 sdds-u-pr2">...</td>
-                        <td class="sdds-table__body-cell sdds-u-pl2 sdds-u-pr2">...</td>
-                    </tr>
-                </tbody>
-            </table>
+
+        <div class=dataTable style="margin-top: var(--sdds-spacing-element-48) ">
+            <div class="sdds-row">
+                <div class="sdds-col-sm-12">
+                    <table class="sdds-table">
+                        <thead class="sdds-table__header" style="text-align-last: center";>
+                            <tr class="sdds-table__row">
+                                <th class="sdds-table__header-cell sdds-u-pl2 sdds-u-pr2">Datum</th>
+                                <th class="sdds-table__header-cell sdds-u-pl2 sdds-u-pr2"> Beskrivning</th>
+                            </tr>
+                        </thead>
+                        <tbody class="sdds-table__body">
+                            <tr class="sdds-table__row">
+                                <td class="sdds-table__body-cell sdds-u-pl2 sdds-u-pr2">2022-06-01</td>
+                                <td class="sdds-table__body-cell sdds-u-pl2 sdds-u-pr2">Skrivaren sprängdes...</td>
+                            </tr>
+                            <tr class="sdds-table__row">
+                                <td class="sdds-table__body-cell sdds-u-pl2 sdds-u-pr2">...</td>
+                                <td class="sdds-table__body-cell sdds-u-pl2 sdds-u-pr2">...</td>
+                            </tr>
+                            <tr class="sdds-table__row">
+                                <td class="sdds-table__body-cell sdds-u-pl2 sdds-u-pr2">...</td>
+                                <td class="sdds-table__body-cell sdds-u-pl2 sdds-u-pr2">...</td>
+                            </tr>
+                            <tr class="sdds-table__row">
+                                <td class="sdds-table__body-cell sdds-u-pl2 sdds-u-pr2">...</td>
+                                <td class="sdds-table__body-cell sdds-u-pl2 sdds-u-pr2">...</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
     </div>
-
-
-    @*Script för att show div*@
-    <script>
-        function myShowDiv() {
-            const hidesection = document.querySelector('.hidesection');
-            hidesection.style.display = "block";
-        }
-    </script>
-
 </div>
+@*Script för att show div*@
+<script>
+    function myShowDiv() {
+        const hidesection = document.querySelector('.hidesection');
+        hidesection.style.display = "block";
+    }
+</script>
+
+    </div>
 
 

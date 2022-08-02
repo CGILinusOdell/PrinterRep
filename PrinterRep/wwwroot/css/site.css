@@ -90,12 +90,15 @@ body {
 
 .section-wrapper {
     margin-top: var(--sdds-spacing-element-32);
- 
+   
 }
 
 .component-wrapper {
-    padding-bottom: var(--sdds-spacing-element-24);
-   
+      padding-bottom: var(--sdds-spacing-element-24);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: var(--sdds-spacing-layout-160);
 }
 
 #Username {
@@ -105,8 +108,13 @@ body {
 .sdds-btn-group .sdds-btn,
 .sdds-btn-group sdds-button {
     margin: var(--sdds-spacing-element-24);
+ 
 }
 
+/*#PrintButton {
+    padding: var(--sdds-spacing-element-4); 
+    margin: var(--sdds-spacing-element-4);
+}*/
 
 
 
