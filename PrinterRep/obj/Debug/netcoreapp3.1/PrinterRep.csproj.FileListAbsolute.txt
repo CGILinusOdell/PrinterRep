@@ -126,7 +126,6 @@ C:\Users\malin.widen\source\repos\PrinterRep\PrinterRep\bin\Debug\netcoreapp3.1\
 C:\Users\malin.widen\source\repos\PrinterRep\PrinterRep\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
 C:\Users\malin.widen\source\repos\PrinterRep\PrinterRep\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
 C:\Users\malin.widen\source\repos\PrinterRep\PrinterRep\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\System.Windows.Extensions.dll
-C:\Users\malin.widen\source\repos\PrinterRep\PrinterRep\obj\Debug\netcoreapp3.1\Razor\Views\Home\Search.cshtml.g.cs
 C:\Users\malin.widen\source\repos\PrinterRep\PrinterRep\bin\Debug\netcoreapp3.1\Azure.Core.dll
 C:\Users\malin.widen\source\repos\PrinterRep\PrinterRep\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\malin.widen\source\repos\PrinterRep\PrinterRep\bin\Debug\netcoreapp3.1\Microsoft.Graph.dll
@@ -145,3 +144,4 @@ C:\Users\malin.widen\source\repos\PrinterRep\PrinterRep\bin\Debug\netcoreapp3.1\
 C:\Users\malin.widen\source\repos\PrinterRep\PrinterRep\bin\Debug\netcoreapp3.1\System.Text.Encodings.Web.dll
 C:\Users\malin.widen\source\repos\PrinterRep\PrinterRep\bin\Debug\netcoreapp3.1\System.Text.Json.dll
 C:\Users\malin.widen\source\repos\PrinterRep\PrinterRep\obj\Debug\netcoreapp3.1\Razor\Views\Home\Add.cshtml.g.cs
+C:\Users\malin.widen\source\repos\PrinterRep\PrinterRep\obj\Debug\netcoreapp3.1\Razor\Views\Home\Scan.cshtml.g.cs

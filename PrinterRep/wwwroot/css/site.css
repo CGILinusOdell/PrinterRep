@@ -111,11 +111,27 @@ body {
  
 }
 
-/*#PrintButton {
-    padding: var(--sdds-spacing-element-4); 
-    margin: var(--sdds-spacing-element-4);
-}*/
+.index_buttons {
+    width: 200px;
+    padding: var(--sdds-spacing-element-16);
+    margin: var(--sdds-spacing-element-16);
+}
 
+#add_div {
+    margin-top: var(--sdds-spacing-element-20);
+    text-align: left;
+}
 
+#add_button {
+    margin-top: var(--sdds-spacing-element-48);
+}
 
+#scan_div {
+    margin: var(--sdds-spacing-layout-160);
+    text-align: left; 
+    margin-top: var(--sdds-spacing-layout-160);
+}
 
+#hideSection {
+    display: none;
+}

@@ -28,7 +28,7 @@ namespace PrinterRep.Controllers
             return View();
         }
 
-        public IActionResult Search()
+        public IActionResult Scan()
         {
             return View();
         }
