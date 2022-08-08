@@ -19,10 +19,10 @@
     </div>
 
 
-    @*Sektion som visas efter "SÖK" OnClick*@
+    @*Sektion som visas efter "Scan" OnClick*@
     <div class="hidesection" id="hideSection">
         <div class="sdds-col-sm-12">
-            <div class="sdds-col-sm-6" style="margin-top: var(--sdds-spacing-element-20); text-align:left">
+            <div class="sdds-col-sm-6" id="scan_textfield">
 
                 <sdds-textfield type="text">
                     <span slot="sdds-label">Namn</span>
@@ -31,12 +31,12 @@
 
 
             <div class="sdds-row">
-                <div class="sdds-col-sm-10" style="margin-top: var(--sdds-spacing-element-20); text-align:left">
+                <div class="sdds-col-sm-10" id="scan_textfield">
                     <sdds-textfield type="text">
                         <span slot="sdds-label">Typ</span>
                     </sdds-textfield>
                 </div>
-                <div class="sdds-col-sm-2" style="text-align:right; margin-top: var(--sdds-spacing-element-20)">
+                <div class="sdds-col-sm-2" id="scan_button">
                     <sdds-button type="primary" fullbleed text="QR-Print"></sdds-button>
                 </div>
             </div>
@@ -47,7 +47,7 @@
             <sdds-table  body-data='[{"Datum":"2022-06-07","Felbeskrivning":"Trasig....................","Åtgärd":"Lagad"},{"Datum":"2022-09-12","Felbeskrivning":"Skriver ej ut...................","Åtgärd":"Starta om"},{"Datum":"2022-06-22","Felbeskrivning":"Exploderade","Åtgärd":"Köpte ny"}]'
                         no-min-width
                         pagination
-                        rows-per-page="3" @*fungerar ej*@>
+                        rows-per-page="3" @*pagination fungerar ej*@>
                 <sdds-header-cell column-key='Datum' column-title='Datum' style="width: 200px;"></sdds-header-cell>
                 <sdds-header-cell column-key='Felbeskrivning' column-title='Felbeskrivning' style="width: 300px;"></sdds-header-cell>
                 <sdds-header-cell column-key='Åtgärd' column-title='Åtgärd' style="width: 300px;"></sdds-header-cell>

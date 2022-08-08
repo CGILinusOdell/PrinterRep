@@ -135,3 +135,12 @@ body {
 #hideSection {
     display: none;
 }
+
+#scan_textfield {
+    margin-top: var(--sdds-spacing-element-20);
+}
+
+#scan_button {
+    margin-top: var(--sdds-spacing-element-20);
+    text-align: right;
+}
