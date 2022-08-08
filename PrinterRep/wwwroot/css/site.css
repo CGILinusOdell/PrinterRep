@@ -1,4 +1,4 @@
-﻿/*Test Footer*/
+/*Test Footer*/
 html, body {
     height: 100%;
 }
@@ -95,10 +95,10 @@ body {
 
 .component-wrapper {
       padding-bottom: var(--sdds-spacing-element-24);
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    margin: var(--sdds-spacing-layout-160);
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      margin: var(--sdds-spacing-layout-160);
 }
 
 #Username {

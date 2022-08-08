@@ -16,6 +16,7 @@
 <body>
     <div class="content">
         <header>
+               @*Dropdown fungerar ej (..för mig?)*@
             <nav class='sdds-nav ${openMobileMenu && ' sdds-nav__mob-menu--opened'}'>
                 <div class='sdds-nav__left'>
                     <div class="sdds-nav__overlay" onclick="closeDropdownsFromOverlay()"></div>
@@ -33,20 +34,22 @@
                     <ul class='sdds-nav__inline-menu'>
 
                         <li class='sdds-nav__item'>
-                            <a class='sdds-nav__item-core' href='#'>
+                            <a class='sdds-nav__item-core' href='/Home/Search'>
                                 <p class='sdds-nav__item-core-text'>Scanna skrivare</p>
                             </a>
                         </li>
 
                         <li class='sdds-nav__item'>
-                            <a class='sdds-nav__item-core' href='#'>
+                            <a class='sdds-nav__item-core' href='/Home/Add'>
                                 <p class='sdds-nav__item-core-text'>Lägg till skrivare</p>
                             </a>
                         </li>
 
 
+
+                        @*Dropdown fungerar ej (..för mig?)*@
                         <li class='sdds-nav__item sdds-nav__dropdown ${
-              openInlineDropdown && ' sdds-nav__dropdown--opened'}'>
+                        openInlineDropdown && ' sdds-nav__dropdown--opened'}'>
                             <button class='sdds-nav__item-core' onclick='toggleInlineDropdown()'>
                                 <p class='sdds-nav__item-core-text'>Administation</p>
                                 <span class='sdds-nav__dropdown-icon'>
@@ -56,9 +59,9 @@
                                 </span>
                             </button>
                             <ul class='sdds-nav__dropdown-menu'>
-                                <li class='sdds-nav__dropdown-item'><a class='sdds-nav__dropdown-item-core' href='#'>Sub item 3 long label...</a></li>
-                                <li class='sdds-nav__dropdown-item'><a class='sdds-nav__dropdown-item-core' href='#'>Sub item 3</a></li>
-                                <li class='sdds-nav__dropdown-item sdds-nav__dropdown-item--active'><a class='sdds-nav__dropdown-item-core' href='#'>Sub item 3 long label...</a></li>
+                                <li class='sdds-nav__dropdown-item'><a class='sdds-nav__dropdown-item-core' href='/Home/Search'>Sök</a></li>
+                                <li class='sdds-nav__dropdown-item'><a class='sdds-nav__dropdown-item-core' href='/Home/Add'>Lägg till</a></li>
+                                <li class='sdds-nav__dropdown-item sdds-nav__dropdown-item--active'><a class='sdds-nav__dropdown-item-core' href='/Home'>Hem</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -66,7 +69,7 @@
 
                 <div class='sdds-nav__right'>
                     <p id="Username" class='sdds-headline-07' ;>@UserPrincipal.Current.SamAccountName</p>
-                    <a class='sdds-nav__item sdds-nav__app-logo' href='#'></a>
+                    <a class='sdds-nav__item sdds-nav__app-logo' href='/Home'></a>
                 </div>
             </nav>
         </header>
