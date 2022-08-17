@@ -44,18 +44,17 @@
 
         @*Web component - test*@
         <div style="margin-top: var(--sdds-spacing-element-48)">
-            <sdds-table  body-data='[{"Datum":"2022-06-07","Felbeskrivning":"Trasig....................","Åtgärd":"Lagad"},{"Datum":"2022-09-12","Felbeskrivning":"Skriver ej ut...................","Åtgärd":"Starta om"},{"Datum":"2022-06-22","Felbeskrivning":"Exploderade","Åtgärd":"Köpte ny"}]'
+            <sdds-table body-data='[{"Datum":"2022-06-07","Felbeskrivning":"Trasig....................","Åtgärd":"Lagad"},{"Datum":"2022-09-12","Felbeskrivning":"Skriver ej ut...................","Åtgärd":"Starta om"},{"Datum":"2022-06-22","Felbeskrivning":"Exploderade","Åtgärd":"Köpte ny"}]'
                         no-min-width
                         pagination
-                        rows-per-page="3" @*pagination fungerar ej*@>
+                        rows-per-page="2" @*pagination fungerar ej*@>
                 <sdds-header-cell column-key='Datum' column-title='Datum' style="width: 200px;"></sdds-header-cell>
                 <sdds-header-cell column-key='Felbeskrivning' column-title='Felbeskrivning' style="width: 300px;"></sdds-header-cell>
                 <sdds-header-cell column-key='Åtgärd' column-title='Åtgärd' style="width: 300px;"></sdds-header-cell>
             </sdds-table>
         </div>
 
-
-
+      
 
         @*Slut på test*@
 

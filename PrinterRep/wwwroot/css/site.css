@@ -108,13 +108,14 @@ body {
 .sdds-btn-group .sdds-btn,
 .sdds-btn-group sdds-button {
     margin: var(--sdds-spacing-element-24);
- 
+    border-radius: 2px;
 }
 
 .index_buttons {
     width: 200px;
     padding: var(--sdds-spacing-element-16);
     margin: var(--sdds-spacing-element-16);
+    border-radius: 2px;
 }
 
 #add_div {
@@ -124,6 +125,7 @@ body {
 
 #add_button {
     margin-top: var(--sdds-spacing-element-48);
+    border-radius: 2px;
 }
 
 #scan_div {
@@ -143,4 +145,13 @@ body {
 #scan_button {
     margin-top: var(--sdds-spacing-element-20);
     text-align: right;
+    border-radius:2px;
 }
+
+
+/*Vertical-align: top?*/
+
+/*Test alla knappar:*/
+/*button{
+    border-radius:2px;
+}*/
